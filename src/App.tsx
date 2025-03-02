@@ -79,7 +79,11 @@ function App() {
       {/* Navigation bar */}
       <nav className="navbar">
         <div className="nav-left">
-          <img src="https://codeinthedark.hackillinois.org/submissions/images/CAT-Logo-small.png" alt="Logo" className="nav-logo" />
+          <img
+            src="https://codeinthedark.hackillinois.org/submissions/images/CAT-Logo-small.png"
+            alt="Logo"
+            className="nav-logo"
+          />
         </div>
         <div className="nav-right">
           <Dropdown title="Home" items={dropdownItems} />
@@ -141,7 +145,10 @@ function App() {
       <section className="three-columns">
         {["Cat loves geeks ", "Cat loves cs", "Title 3"].map((title, i) => (
           <div key={i} className="column">
-            <img src="https://codeinthedark.hackillinois.org/submissions/images/home/profile2.png" alt={`Small ${i + 1}`} />
+            <img
+              src="https://codeinthedark.hackillinois.org/submissions/images/home/profile2.png"
+              alt={`Small ${i + 1}`}
+            />
             <h3>{title}</h3>
             <p>
               Line 1<br />
@@ -180,7 +187,10 @@ function App() {
 
       {/* Centered square image */}
       <section className="centered-square">
-        <img src="https://codeinthedark.hackillinois.org/submissions/images/CAT100Logo.png" alt="Centered Square" />
+        <img
+          src="https://codeinthedark.hackillinois.org/submissions/images/CAT100Logo.png"
+          alt="Centered Square"
+        />
       </section>
 
       {/* Title, full width sentence and 6 column gallery */}
@@ -191,18 +201,34 @@ function App() {
         </p>
         <div className="image-grid">
           {Array.from({ length: 6 }).map((_, i) => (
-            <img key={i} src="https://codeinthedark.hackillinois.org/submissions/images/home/client1.png" alt={`Gallery ${i + 1}`} />
+            <img
+              key={i}
+              src="https://codeinthedark.hackillinois.org/submissions/images/home/client1.png"
+              alt={`Gallery ${i + 1}`}
+            />
           ))}
         </div>
       </section>
 
       {/* Full width image */}
       <section className="full-width-image">
-        <img src="https://codeinthedark.hackillinois.org/submissions/images/home/under.png" alt="Full Width" />
+        <img
+          src="https://codeinthedark.hackillinois.org/submissions/images/home/under.png"
+          alt="Full Width"
+        />
       </section>
 
       {/* Footer with three columns */}
-      <footer className="footer" style={{ backgroundImage: 'url(https://codeinthedark.hackillinois.org/submissions/images/home/footer.png)', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '160px' }}>
+      <footer
+        className="footer"
+        style={{
+          backgroundImage:
+            "url(https://codeinthedark.hackillinois.org/submissions/images/home/footer.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "660px",
+        }}
+      >
         <div className="footer-column">
           <h3>Footer Title</h3>
           <p>"A quote goes here."</p>
@@ -210,7 +236,7 @@ function App() {
         </div>
         <div className="footer-column">
           <p>
-        <strong>Contact:</strong>
+            <strong>Contact:</strong>
           </p>
           <p>Name: John Doe</p>
           <p>Phone: 123-456-7890</p>
@@ -219,10 +245,10 @@ function App() {
         </div>
         <div className="footer-column">
           <form>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Question" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Question" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </footer>
