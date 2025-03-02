@@ -35,22 +35,22 @@ function App() {
     {
       title: "Row 1 Title",
       text: "Row 1 line 1<br/>Row 1 line 2",
-      img: "placeholder.jpg",
+      img: "https://codeinthedark.hackillinois.org/submissions/images/home/image1.png",
     },
     {
       title: "Row 2 Title",
       text: "Row 2 line 1<br/>Row 2 line 2",
-      img: "placeholder.jpg",
+      img: "https://codeinthedark.hackillinois.org/submissions/images/home/image2.png",
     },
     {
       title: "Row 3 Title",
       text: "Row 3 line 1<br/>Row 3 line 2",
-      img: "placeholder.jpg",
+      img: "https://codeinthedark.hackillinois.org/submissions/images/home/image3.png",
     },
     {
       title: "Row 4 Title",
       text: "Row 4 line 1<br/>Row 4 line 2",
-      img: "placeholder.jpg",
+      img: "https://codeinthedark.hackillinois.org/submissions/images/home/image1.png",
     },
   ];
 
@@ -141,7 +141,7 @@ function App() {
       <section className="three-columns">
         {["Cat loves geeks ", "Cat loves cs", "Title 3"].map((title, i) => (
           <div key={i} className="column">
-            <img src="placeholder.jpg" alt={`Small ${i + 1}`} />
+            <img src="https://codeinthedark.hackillinois.org/submissions/images/home/profile2.png" alt={`Small ${i + 1}`} />
             <h3>{title}</h3>
             <p>
               Line 1<br />
@@ -180,7 +180,7 @@ function App() {
 
       {/* Centered square image */}
       <section className="centered-square">
-        <img src="placeholder.jpg" alt="Centered Square" />
+        <img src="https://codeinthedark.hackillinois.org/submissions/images/CAT100Logo.png" alt="Centered Square" />
       </section>
 
       {/* Title, full width sentence and 6 column gallery */}
@@ -191,14 +191,14 @@ function App() {
         </p>
         <div className="image-grid">
           {Array.from({ length: 6 }).map((_, i) => (
-            <img key={i} src="placeholder.jpg" alt={`Gallery ${i + 1}`} />
+            <img key={i} src="https://codeinthedark.hackillinois.org/submissions/images/home/client1.png" alt={`Gallery ${i + 1}`} />
           ))}
         </div>
       </section>
 
       {/* Full width image */}
       <section className="full-width-image">
-        <img src="placeholder.jpg" alt="Full Width" />
+        <img src="https://codeinthedark.hackillinois.org/submissions/images/home/under.png" alt="Full Width" />
       </section>
 
       {/* Footer with three columns */}
