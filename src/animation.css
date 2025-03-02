@@ -3,6 +3,7 @@
   position: relative;
   width: 400px;
   height: 300px;
+  z-index: 10;
 }
 
 .hill {

@@ -6,8 +6,13 @@ type DropdownProps = { title: string; items: string[] };
 
 function Dropdown({ title, items }: DropdownProps) {
   const [open, setOpen] = useState(false);
+
   return (
-    <div className="dropdown" onClick={() => setOpen(!open)}>
+    <div
+      className="dropdown"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
       <div className="dropdown-title">
         {title} <span className="caret">▼</span>
       </div>
