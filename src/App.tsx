@@ -159,28 +159,41 @@ function App() {
       </section>
 
       {/* 80px high section with images and a "hit me!" button */}
-      <section className="eighty-section">
-        <img src="placeholder.jpg" alt="Left" className="side-image" />
-        <img src="placeholder.jpg" alt="Right" className="side-image" />
-        <button className="hit-button" onClick={handleScrollTop}>
+      <section
+        className="eighty-section"
+        style={{
+          backgroundImage: 'url(https://codeinthedark.hackillinois.org/submissions/images/home/tour-bg.png)',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'repeat',
+          backgroundPosition: 'center',
+          height: '80px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '0 20px',
+        }}
+      >
+        <img src="https://codeinthedark.hackillinois.org/submissions/images/CAT-Logo-small.png" alt="Left" className="side-image" style={{ width: '40px', height: '40px' }} />
+        <button className="hit-button" onClick={handleScrollTop} style={{ fontSize: '12px', padding: '5px 10px' }}>
           hit me!
         </button>
+        <img src="https://codeinthedark.hackillinois.org/submissions/images/home/tour-icon2.png" alt="Right" className="side-image" style={{ width: '40px', height: '40px' }} />
       </section>
 
       {/* Four rows alternating section */}
-      <section className="four-rows">
+      <section className="four-rows" style={{ padding: '0 80px' }}>
         {rows.map((row, index) => (
           <div
-            key={index}
-            className={`row ${index % 2 !== 0 ? "reverse" : ""}`}
+        key={index}
+        className={`row ${index % 2 !== 0 ? "reverse" : ""}`}
           >
-            <div className="row-image">
-              <img src={row.img} alt={`Row ${index + 1}`} />
-            </div>
-            <div className="row-text">
-              <h2>{row.title}</h2>
-              <p dangerouslySetInnerHTML={{ __html: row.text }}></p>
-            </div>
+        <div className="row-image">
+          <img src={row.img} alt={`Row ${index + 1}`} />
+        </div>
+        <div className="row-text">
+          <h2>{row.title}</h2>
+          <p dangerouslySetInnerHTML={{ __html: row.text }}></p>
+        </div>
           </div>
         ))}
       </section>
