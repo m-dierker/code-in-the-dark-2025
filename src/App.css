@@ -1,0 +1,256 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Top header with light blue background */
+  .top-header {
+    padding: 40px;
+    background-color: lightblue;
+    position: relative;
+  }
+  
+  .social-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    cursor: pointer;
+    transition: fill 0.3s;
+  }
+  
+  .social-icon:hover rect {
+    fill: blue;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav-logo {
+    height: 40px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .caret {
+    margin-left: 5px;
+    font-size: 0.8em;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .dropdown-item {
+    padding: 5px 10px;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  /* Large section with two columns */
+  .large-section {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .large-section-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .dark-button {
+    padding: 10px 20px;
+    border: 1px solid blue;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .large-section-right img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Three columns section on blue background */
+  .three-columns {
+    background: blue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .three-columns .column {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .three-columns .column img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 80px height section with side images and background image */
+  .eighty-section {
+    height: 80px;
+    position: relative;
+    background: url("placeholder.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .eighty-section .side-image {
+    height: 60px;
+    width: auto;
+  }
+  
+  .hit-button {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  
+  /* Four rows alternating section */
+  .four-rows {
+    padding: 20px;
+  }
+  
+  .four-rows .row {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .four-rows .row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .row-image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .row-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .row-text {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  /* Centered square image */
+  .centered-square {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .centered-square img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Section with title, sentence and 6 column gallery */
+  .six-columns {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .six-columns .image-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .six-columns .image-grid img {
+    width: calc(100% / 6 - 10px);
+    height: auto;
+  }
+  
+  /* Full width image */
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer with three columns */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .red-name {
+    color: red;
+  }
+  
+  .footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer form input,
+  .footer form textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .footer form button {
+    padding: 10px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+  }
+  
