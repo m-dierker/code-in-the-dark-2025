@@ -202,7 +202,7 @@ function App() {
       </section>
 
       {/* Footer with three columns */}
-      <footer className="footer">
+      <footer className="footer" style={{ backgroundImage: 'url(https://codeinthedark.hackillinois.org/submissions/images/home/footer.png)', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '160px' }}>
         <div className="footer-column">
           <h3>Footer Title</h3>
           <p>"A quote goes here."</p>
@@ -210,7 +210,7 @@ function App() {
         </div>
         <div className="footer-column">
           <p>
-            <strong>Contact:</strong>
+        <strong>Contact:</strong>
           </p>
           <p>Name: John Doe</p>
           <p>Phone: 123-456-7890</p>
@@ -219,10 +219,10 @@ function App() {
         </div>
         <div className="footer-column">
           <form>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Question" />
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Question" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
           </form>
         </div>
       </footer>
