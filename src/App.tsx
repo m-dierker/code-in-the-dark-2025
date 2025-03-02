@@ -79,12 +79,12 @@ function App() {
       {/* Navigation bar */}
       <nav className="navbar">
         <div className="nav-left">
-          <img src="placeholder.jpg" alt="Logo" className="nav-logo" />
+          <img src="https://codeinthedark.hackillinois.org/submissions/images/CAT-Logo-small.png" alt="Logo" className="nav-logo" />
         </div>
         <div className="nav-right">
-          <Dropdown title="Menu 1" items={dropdownItems} />
-          <Dropdown title="Menu 2" items={dropdownItems} />
-          <Dropdown title="Menu 3" items={dropdownItems} />
+          <Dropdown title="Home" items={dropdownItems} />
+          <Dropdown title="Pages" items={dropdownItems} />
+          <Dropdown title="Blog" items={dropdownItems} />
           {/* Search icon (non-functional) */}
           <svg className="search-icon" width="24" height="24">
             <circle
@@ -139,7 +139,7 @@ function App() {
 
       {/* Three columns section */}
       <section className="three-columns">
-        {["Title 1", "Title 2", "Title 3"].map((title, i) => (
+        {["Cat loves geeks ", "Cat loves cs", "Title 3"].map((title, i) => (
           <div key={i} className="column">
             <img src="placeholder.jpg" alt={`Small ${i + 1}`} />
             <h3>{title}</h3>
