@@ -101,6 +101,11 @@
     background: transparent;
     cursor: pointer;
   }
+
+  .large-section-right {
+    width: 600px !important;
+    justify-self: center;
+  }
   
   .large-section-right img {
     max-width: 100%;

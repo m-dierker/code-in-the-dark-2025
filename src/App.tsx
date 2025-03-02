@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import "./animation.css";
 
 type DropdownProps = { title: string; items: string[] };
 
@@ -111,8 +112,23 @@ function App() {
           </p>
           <button className="dark-button">Go D@RK!</button>
         </div>
-        <div className="large-section-right">
-          <img src="placeholder.jpg" alt="Large Visual" />
+        <div className="large-section-right anim-container">
+          <img
+            src="https://codeinthedark.hackillinois.org/submissions/images/hill.png"
+            className="hill"
+          />
+          <img
+            src="https://codeinthedark.hackillinois.org/submissions/images/home/slider/sun.png"
+            className="sun"
+          />
+          <img
+            src="https://codeinthedark.hackillinois.org/submissions/images/home/slider/birds1.png"
+            className="bird1"
+          />
+          <img
+            src="https://codeinthedark.hackillinois.org/submissions/images/home/slider/birds2.png"
+            className="bird2"
+          />
         </div>
       </section>
 
