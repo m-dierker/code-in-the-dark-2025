@@ -6,6 +6,6 @@ import Animation from "./animation.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Animation />
+    <App />
   </StrictMode>
 );
